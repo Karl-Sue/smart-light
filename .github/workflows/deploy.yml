@@ -45,6 +45,9 @@ jobs:
         
       - name: Setup Pages
         uses: actions/configure-pages@v4
+        with:
+          # Automatically inject basePath in your Vite config and enable pages
+          enablement: true
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
